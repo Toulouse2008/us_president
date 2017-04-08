@@ -1,0 +1,298 @@
+<DOCTYPE html>
+<html lang=“en-US”>
+<head>
+<meta charset=“UTF-8”>
+<title>The presidents of the United States</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="stylelogin.css" />
+</head>
+
+<body>
+  <header id="webTitle">
+    <section id="sectionTop1">
+      <div id="logoL">
+      <img id="flag" src="images/flag.png" />
+    </div>
+    <div id="topMid">
+      <h2>The United State Presidents</h2>
+    </div>
+    <div id="topR">
+        <a id="modal_trigger" href="#modal" class="btn">Sign in | Sign up</a>
+
+        <div id="modal" class="popupContainer" style="display:none;">
+          <header class="popupHeader">
+            <span class="header_title">Login</span>
+            <span class="modal_close"><i class="fa fa-times"></i></span>
+          </header>
+
+          <section class="popupBody">
+            <div class = "loginWin">
+
+              <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+              </div>
+          </div>
+
+
+            <!-- Username & Password Login form -->
+            <div class="user_login">
+              <form action=login.php method=post>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                  <input id="remember" type="checkbox" />
+                  <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                  <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                  <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+              </form>
+
+              <a href="#" class="forgot_password">Forgot password?</a>
+            </div>
+
+            <!-- Register Form -->
+            <div class="user_register">
+              <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                  <input id="send_updates" type="checkbox" />
+                  <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                  <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                  <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+
+    </div>
+    </section>
+
+  <nav>
+    <ul id="navTop">
+      <li><a href=home.html>Home</a></li>
+      <li><a href=history.html>History</a></li>
+      <li><a class="active" href=president.html>President </a></li>
+      <li><a href=population.html>Population</a></li>
+      <li><a href=state.html>State</a></li>
+      <li><a href=registration.html>Registration</a></li>
+      <li><a href=contact.html>Contact Us</a><li>
+    </ul>
+  </nav>
+
+<div class="intro">
+  <p>Under the United States Constitution, the president of the United States is the head of state and head of government of the United States. As the chief of the executive of state and head of the federal government as a whole, the presidency is the highest political office in the United States by influence and recognition. The president is also the commander-in-chief of the United States Armed Forces. The president is indirectly elected to a four-year term by an Electoral College (or by the House of Representatives, should the Electoral College fail to award an absolute majority of votes to any person). Since the ratification of the Twenty-second Amendment to the United States Constitution in 1951, no person may be elected president more than twice, and no one who has served more than two years of a term to which someone else was elected may be elected more than once. Upon the death, resignation, or removal from office of an incumbent president, the vice president assumes the office. The president must be at least 35 years of age, has to have lived in the United States for 14 years, and has to be a “natural born” citizen of the United States.</p>
+  <p>This list includes only those persons who were sworn into office as president following the ratification of the United States Constitution, which took effect on March 4, 1789. For American leaders before this ratification, see President of the Continental Congress. The list does not include any acting presidents under the Twenty-fifth Amendment to the United States Constitution.</p>
+  <p>There have been 43 people sworn into office, and 44 presidencies, as Grover Cleveland served two non-consecutive terms and is counted chronologically as both the 22nd and 24th president. Of the individuals elected as president, four died in office of natural causes(William Henry Harrison, Zachary Taylor, Warren G. Harding, and Franklin D. Roosevelt), four were assassinated(Abraham Lincoln, James A. Garfield, William Mckinley, and John F. Kennedy) and one resigned (Richard Nixon).</p>
+  <p> George Washington, the first president, was inaugurated in 1789 after a unanimous vote of the Electoral College. William Henry Harrison spent the shortest time in office with 32 days in 1841. Franklin D. Roosevelt spent the longest with over twelve years, but died shortly into his fourth term in 1945; he is the only president to have served more than two terms. A constitutional amendment, affecting presidents after Harry Truman, was passed to limit the number of times an individual can be elected president. Andrew Jackson, the seventh president, was the first to be elected by white men of all classes in 1828 after most laws barring non-land-owners from voting were repealed. Warren harding was the first elected after women gained voting rights in 1920. Four presidents - Jon Q. Adams, Rutherford B. Hayes, Benjamin Harrison and George W. Bush - lost the popular vote but assumed office; Bush was subsequently re-elected with a popular majority. John F. Kennedy has been the only president of Roman Catholic faith and the current president, Barack Obama, is the first president of African descent.</p>
+</div>
+
+<form action="psearch.php" method="POST">
+<p>Presidency No: <input type="text" name="no"></p>
+<p>First Name: <input type="text" name="first_name"></p>
+<p>Last Name: <input type="text" name="last_name"></p>
+<input type="submit">
+</form>
+
+<div class="tbCaption">
+List of U.S. Presidents
+</div>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>No</th>
+      <th>Name</th>
+      <th>No</th>
+      <th>Name</th>
+      <th>No</th>
+      <th>Name</th>
+      <th>No</th>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>George Washington</td>
+      <td>2</td>
+      <td>John Adams</td>
+      <td>3</td>
+      <td>Thomas Jefferson</td>
+      <td>4</td>
+      <td>James Madison</td>
+      <td>5</td>
+      <td>James Monroe</td>
+
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>John Quincy Adams</td>
+      <td>7</td>
+      <td>Andrew Jackson</td>
+      <td>8</td>
+      <td>Martin Van Buren</td>
+      <td>9</td>
+      <td>William Henry Harrison</td>
+      <td>10</td>
+      <td>John Tyler</td>
+
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>James K. Polk</td>
+      <td>12</td>
+      <td>Zachary Taylor</td>
+      <td>13</td>
+      <td>Millard Fillmore</td>
+      <td>14</td>
+      <td>Franklin Pierce</td>
+      <td>15</td>
+      <td>James Buchanan</td>
+
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Abraham Lincoln</td>
+      <td>17</td>
+      <td>Andrew Johnson</td>
+      <td>18</td>
+      <td>Ulysses S. Grant</td>
+      <td>19</td>
+      <td>Rutherford B. Hayes</td>
+      <td>20</td>
+      <td>James A. Garfield</td>
+
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Chester A. Arthur</td>
+      <td>22</td>
+      <td>Grover Cleveland</td>
+      <td>23</td>
+      <td>Benjamin Harrison</td>
+      <td>24</td>
+      <td>Grover Cleveland</td>
+      <td>25</td>
+      <td>William McKinley</td>
+
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Theodore Roosevelt</td>
+      <td>27</td>
+      <td>William Howard Taft</td>
+      <td>28</td>
+      <td>Woodrow Wilson</td>
+      <td>29</td>
+      <td>Warren G. Harding</td>
+      <td>30</td>
+      <td>Calvin Coolidge</td>
+
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Herbert Hoover</td>
+      <td>32</td>
+      <td>Franklin D. Roosevelt</td>
+      <td>33</td>
+      <td>Harry S. Truman</td>
+      <td>34</td>
+      <td>Dwight D. Eisenhower</td>
+      <td>35</td>
+      <td>John F. Kennedy</td>
+
+
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Lyndon B. Johnson</td>
+      <td>37</td>
+      <td>Richard Nixon</td>
+      <td>38</td>
+      <td>Gerald Ford</td>
+      <td>39</td>
+      <td>Jimmy Carter</td>
+      <td>40</td>
+      <td>Ronald Reagan</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>George H.W. Bush</td>
+      <td>42</td>
+      <td>Bill Clinton</td>
+      <td>43</td>
+      <td>George W. Bush</td>
+      <td>44</td>
+      <td>Barack Obama</td>
+      <td>45</td>
+      <td>Donald J. Trump</td>
+    </tr>
+</table>
+<footer>
+  <div id="topFooter">Copyright</div>
+  <div id="mainFooter">
+   <p>Address:</p>
+   <p>Contact:</p>
+   <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+ </div>
+</footer>
+
+<script type="text/javascript">
+  $("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+  $(function(){
+    // Calling Login Form
+    $("#login_form").click(function(){
+      //$(".social_login").hide();
+      $(".loginWin").hide();
+      $(".user_login").show();
+      return false;
+    });
+
+    // Calling Register Form
+    $("#register_form").click(function(){
+      $(".loginWin").hide();
+      $(".user_register").show();
+      $(".header_title").text('Register');
+      return false;
+    });
+
+    // Going back to Social Forms
+    $(".back_btn").click(function(){
+      $(".user_login").hide();
+      $(".user_register").hide();
+      $(".loginWin").show();
+      $(".header_title").text('Login');
+      return false;
+    });
+
+  })
+</script>
+</body>
+</html>
