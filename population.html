@@ -1,0 +1,1060 @@
+<DOCTYPE html>
+<html lang=“en-US”>
+<head>
+<meta charset="UTF-8">
+<title>The population of the United States</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="stylelogin.css" /></head>
+
+<body>
+    <header id="webTitle">
+      <section id="sectionTop1">
+        <div id="logoL">
+        <img id="flag" src="images/flag.png" />
+      </div>
+      <div id="topMid">
+        <h2>The United State Presidents</h2>
+      </div>
+      <div id="topR">
+          <a id="modal_trigger" href="#modal" class="btn">Sign in | Sign up</a>
+
+          <div id="modal" class="popupContainer" style="display:none;">
+            <header class="popupHeader">
+              <span class="header_title">Login</span>
+              <span class="modal_close"><i class="fa fa-times"></i></span>
+            </header>
+
+            <section class="popupBody">
+              <div class = "loginWin">
+
+                <div class="action_btns">
+                  <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                  <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+                </div>
+            </div>
+
+
+              <!-- Username & Password Login form -->
+              <div class="user_login">
+                <form action=login.php method=post>
+                  <label>Email / Username</label>
+                  <input type="text" />
+                  <br />
+
+                  <label>Password</label>
+                  <input type="password" />
+                  <br />
+
+                  <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                  </div>
+
+                  <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                  </div>
+                </form>
+
+                <a href="#" class="forgot_password">Forgot password?</a>
+              </div>
+
+              <!-- Register Form -->
+              <div class="user_register">
+                <form>
+                  <label>Full Name</label>
+                  <input type="text" />
+                  <br />
+
+                  <label>Email Address</label>
+                  <input type="email" />
+                  <br />
+
+                  <label>Password</label>
+                  <input type="password" />
+                  <br />
+
+                  <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                  </div>
+
+                  <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+
+      </div>
+      </section>
+
+    <nav>
+      <ul id="navTop">
+        <li><a href=home.html>Home</a></li>
+        <li><a href=history.html>History</a></li>
+        <li><a href=president.html>President </a></li>
+        <li><a class="active" href=population.html>Population</a></li>
+        <li><a href=state.html>State</a></li>
+        <li><a href=registration.html>Registration</a></li>
+        <li><a href=contact.html>Contact Us</a><li>
+      </ul>
+    </nav>
+<div class="intro">
+  <p>As of April 30, 2016, the United States has a total resident population of 323,730,000, making it the third most populous country in the world. It is very urbanized, with 81% residing in citifies and suburbs as of 2014 (the worldwide urban rate is 54%). California and Texas are the most populous states, as the mean center of U.S. population has consistently shifted westward and southward. New York City is the most populous city n the United States.</p>
+  <p>The total fertility rate in the United States estimated for 2015 is 1.84 children per women, which is below the replacement fertility rate of approximately 2.1. Compared to other western countries in 2012, U.S. fertility rate was lower than that of France(2.01), Australia(1.93) and the United Kingdom(1.92). However, U.S. population growth is among the highest in industrialized countries, because the difference in fertility rates are less than the differences in immigration levels, which are higher in the U.S. The United States Census Bureau shows a population increase of 0.75% for the twelve-month period ending in July 2012. Though high by industrialized country standards, this is below the world average annual rate of 1.1%.</p>
+  <p>The United States Census Bureau defines White people as those &quot;having origins in any of the original peoples of Europe, the Middle East, or North Africa. It includes people who reported &quot;white&quot; or wrote in entries such as Irish, German, Italian, Lebanese, Near Easterner, Arab, or Polish.&quot; Whites constitutes the majority of the U.S. population, with a total of 245,532,000 or 77.7% of the population as of 2013. There are 62.6% Whites when those who describe themselves as &quot;Hispanics&quot; and &quot;white&quot; are taken out of the calculation. Despite major changes due to illegal and legal immigration since 1960s and the higher birth-rates of nonwhites, the overall current majority of American citizens are still white, and English speaking, though regional differences exist.</p>
+  <p>The American population almost quadrupled during the 20th century-at the growth rate of about 1.3% a year-from 76 million in 1900 to 281 million in 2000. It reached the 200 million mark in 1968, and the 300 million mark on October 17, 2006. Population growth is fastest among minorities as a whole, and according to the Census Bureau &apos; s estimation for 2012, 50.4% of American children under the age of 1 belonged to minority groups.</p>
+</div>
+<h1>Vital Statistics</h1>
+<table>
+<tr>
+<th></th>
+<th >Average population (x 1,000)</th>
+<th >Live births</th>
+<th >Deaths</th>
+<th >Natural change</th>
+<th >Crude birth rate (per 1,000)</th>
+<th >Crude death rate (per 1,000)</th>
+<th >Natural change (per 1,000)</th>
+<th >Total fertility rate</th>
+</tr>
+<tr>
+<td>1935</td>
+<td >127,362</td>
+<td >2,377,000</td>
+<td >1,392,752</td>
+<td>984,248</td>
+<td >18.7</td>
+<td>10.9</td>
+<td >7.7</td>
+<td >2.19</td>
+</tr>
+<tr>
+<td>1936</td>
+<td >128,181</td>
+<td >2,355,000</td>
+<td >1,479,228</td>
+<td >875,772</td>
+<td >18.4</td>
+<td >11.5</td>
+<td >6.8</td>
+<td >2.15</td>
+</tr>
+<tr>
+<td>1937</td>
+<td >128,961</td>
+<td >2,413,000</td>
+<td >1,450,427</td>
+<td >962,573</td>
+<td >18.7</td>
+<td >11.2</td>
+<td >7.5</td>
+<td>2.17</td>
+</tr>
+<tr>
+<td>1938</td>
+<td >129,969</td>
+<td >2,496,000</td>
+<td >1,381,391</td>
+<td >1,114,609</td>
+<td >19.2</td>
+<td >10.6</td>
+<td >8.6</td>
+<td >2.22</td>
+</tr>
+<tr>
+<td>1939</td>
+<td >131,028</td>
+<td >2,466,000</td>
+<td >1,387,897</td>
+<td >1,078,103</td>
+<td >18.8</td>
+<td>10.6</td>
+<td >8.2</td>
+<td >2.17</td>
+</tr>
+<tr>
+<td>1940</td>
+<td >132,165</td>
+<td >2,559,000</td>
+<td >1,417,269</td>
+<td >1,142,000</td>
+<td  >19.4</td>
+<td  >10.8</td>
+<td  >8.6</td>
+<td  >2.23</td>
+</tr>
+<tr>
+<td>1941</td>
+<td  >133,002</td>
+<td  >2,703,000</td>
+<td  >1,397,642</td>
+<td  >1,305,358</td>
+<td  >20.3</td>
+<td  >10.5</td>
+<td  >9.8</td>
+<td  >2.33</td>
+</tr>
+<tr>
+<td>1942</td>
+<td  >134,464</td>
+<td  >2,989,000</td>
+<td  >1,385,187</td>
+<td  >1,603,813</td>
+<td  >22.2</td>
+<td  >10.3</td>
+<td  >11.9</td>
+<td  >2.55</td>
+</tr>
+<tr>
+<td>1943</td>
+<td  >136,003</td>
+<td  >3,104,000</td>
+<td  >1,459,544</td>
+<td  >1,644,306</td>
+<td  >22.8</td>
+<td  >10.7</td>
+<td  >12.1</td>
+<td  >2.64</td>
+</tr>
+<tr>
+<td>1944</td>
+<td  >138,083</td>
+<td  >2,939,000</td>
+<td  >1,411,338</td>
+<td  >1,644,456</td>
+<td  >21.2</td>
+<td  >10.2</td>
+<td  >11.0</td>
+<td  >2.49</td>
+</tr>
+<tr>
+<td>1945</td>
+<td  >139,994</td>
+<td  >2,858,000</td>
+<td  >1,401,719</td>
+<td  >1,456,281</td>
+<td  >20.4</td>
+<td  >10.0</td>
+<td  >10.4</td>
+<td  >2.42</td>
+</tr>
+<tr>
+<td>1946</td>
+<td  >140,008</td>
+<td  >3,411,000</td>
+<td  >1,395,617</td>
+<td  >2,015,383</td>
+<td  >24.1</td>
+<td  >10.0</td>
+<td  >14.1</td>
+<td  >2.86</td>
+</tr>
+<tr>
+<td>1947</td>
+<td  >145,023</td>
+<td  >3,817,000</td>
+<td  >1,445,370</td>
+<td  >2,371,630</td>
+<td  >26.6</td>
+<td  >10.0</td>
+<td  >16.6</td>
+<td  >3.18</td>
+</tr>
+<tr>
+<td>1948</td>
+<td  >148,013</td>
+<td  >3,637,000</td>
+<td  >1,444,337</td>
+<td  >2,192,663</td>
+<td  >24.9</td>
+<td  >9.8</td>
+<td  >15.1</td>
+<td  >3.03</td>
+</tr>
+<tr>
+<td>1949</td>
+<td  >149,336</td>
+<td  >3,649,000</td>
+<td  >1,443,607</td>
+<td  >2,205,393</td>
+<td  >24.5</td>
+<td  >9.7</td>
+<td  >14.8</td>
+<td  >3.04</td>
+</tr>
+<tr>
+<td>1950</td>
+<td  >151,861</td>
+<td  >3,632,000</td>
+<td  >1,452,454</td>
+<td  >2,180,000</td>
+<td  >24.1</td>
+<td  >9.6</td>
+<td  >14.5</td>
+<td  >3.03</td>
+</tr>
+<tr>
+<td>1951</td>
+<td  >154,056</td>
+<td  >3,823,000</td>
+<td  >1,482,099</td>
+<td  >2,340,901</td>
+<td  >24.8</td>
+<td  >9.6</td>
+<td  >15.2</td>
+<td  >3.20</td>
+</tr>
+<tr>
+<td>1952</td>
+<td  >156,431</td>
+<td  >3,913,000</td>
+<td  >1,496,838</td>
+<td  >2,416,162</td>
+<td  >25.0</td>
+<td  >9.6</td>
+<td  >15.4</td>
+<td  >3.30</td>
+</tr>
+<tr>
+<td>1953</td>
+<td  >159,047</td>
+<td  >3,965,000</td>
+<td  >1,447,459</td>
+<td  >2,517,541</td>
+<td  >25.2</td>
+<td  >9.1</td>
+<td  >16.1</td>
+<td  >3.36</td>
+</tr>
+<tr>
+<td>1954</td>
+<td  >161,948</td>
+<td  >4,078,000</td>
+<td  >1,481,091</td>
+<td  >2,596,909</td>
+<td  >24.8</td>
+<td  >9.3</td>
+<td  >15.5</td>
+<td  >3.48</td>
+</tr>
+<tr>
+<td>1955</td>
+<td  >163,476</td>
+<td  >4,097,000</td>
+<td  >1,528,717</td>
+<td  >2,568,283</td>
+<td  >25.0</td>
+<td  >9.3</td>
+<td  >14.3</td>
+<td  >3.52</td>
+</tr>
+<tr>
+<td>1956</td>
+<td  >166,578</td>
+<td  >4,218,000</td>
+<td  >1,564,476</td>
+<td  >2,653,524</td>
+<td  >25.1</td>
+<td  >9.3</td>
+<td  >15.8</td>
+<td  >3.63</td>
+</tr>
+<tr>
+<td>1957</td>
+<td  >169,637</td>
+<td  >4,308,000</td>
+<td  >1,633,128</td>
+<td  >2,666,872</td>
+<td  >25.3</td>
+<td  >9.5</td>
+<td  >15.8</td>
+<td  >3.71</td>
+</tr>
+<tr>
+<td>1958</td>
+<td  >172,668</td>
+<td  >4,255,000</td>
+<td  >1,647,886</td>
+<td  >2,607,114</td>
+<td  >24.4</td>
+<td  >9.5</td>
+<td  >14.9</td>
+<td  >3.65</td>
+</tr>
+<tr>
+<td>1959</td>
+<td  >175,642</td>
+<td  >4,244,796</td>
+<td  >1,656,814</td>
+<td  >2,587,982</td>
+<td  >24.0</td>
+<td  >9.4</td>
+<td  >14.7</td>
+<td  >3.66</td>
+</tr>
+<tr>
+<td>1960</td>
+<td  >179,979</td>
+<td  >4,257,850</td>
+<td  >1,711,982</td>
+<td  >2,545,868</td>
+<td  >23.7</td>
+<td  >9.5</td>
+<td  >14.1</td>
+<td  >3.65</td>
+</tr>
+<tr>
+<td>1961</td>
+<td  >182,992</td>
+<td  >4,268,326</td>
+<td  >1,701,522</td>
+<td  >2,566,804</td>
+<td  >23.3</td>
+<td  >9.3</td>
+<td  >14.0</td>
+<td  >3.62</td>
+</tr>
+<tr>
+<td>1962</td>
+<td  >185,771</td>
+<td  >4,167,362</td>
+<td  >1,756,720</td>
+<td  >2,410,642</td>
+<td  >22.4</td>
+<td  >9.5</td>
+<td  >12.9</td>
+<td  >3.46</td>
+</tr>
+<tr>
+<td>1963</td>
+<td  >188,483</td>
+<td  >4,098,020</td>
+<td  >1,813,549</td>
+<td  >2,284,471</td>
+<td  >21.7</td>
+<td  >9.6</td>
+<td  >12.1</td>
+<td  >3.32</td>
+</tr>
+<tr>
+<td>1964</td>
+<td  >191,141</td>
+<td  >4,027,490</td>
+<td  >1,798,051</td>
+<td  >2,229,439</td>
+<td  >21.1</td>
+<td  >9.4</td>
+<td  >11.7</td>
+<td  >3.19</td>
+</tr>
+<tr>
+<td>1965</td>
+<td  >193,526</td>
+<td  >3,760,358</td>
+<td  >1,828,136</td>
+<td  >1,932,222</td>
+<td  >19.4</td>
+<td  >9.5</td>
+<td  >9.9</td>
+<td  >2.91</td>
+</tr>
+<tr>
+<td>1966</td>
+<td  >195,576</td>
+<td  >3,606,274</td>
+<td  >1,863,149</td>
+<td  >1,743,125</td>
+<td  >18.4</td>
+<td  >9.5</td>
+<td  >8.9</td>
+<td  >2.72</td>
+</tr>
+<tr>
+<td>1967</td>
+<td  >197,457</td>
+<td  >3,520,959</td>
+<td  >1,851,323</td>
+<td  >1,669,636</td>
+<td  >17.8</td>
+<td  >9.4</td>
+<td  >8.4</td>
+<td  >2.56</td>
+</tr>
+<tr>
+<td>1968</td>
+<td  >199,399</td>
+<td  >3,501,564</td>
+<td  >1,930,082</td>
+<td  >1,571,482</td>
+<td  >17.6</td>
+<td  >9.7</td>
+<td  >7.9</td>
+<td  >2.46</td>
+</tr>
+<tr>
+<td>1969</td>
+<td  >201,385</td>
+<td  >3,600,206</td>
+<td  >1,921,990</td>
+<td  >1,678,216</td>
+<td  >17.9</td>
+<td  >9.5</td>
+<td  >8.4</td>
+<td  >2.46</td>
+</tr>
+<tr>
+<td>1970</td>
+<td  >203,984</td>
+<td  >3,731,386</td>
+<td  >1,921,031</td>
+<td  >1,810,355</td>
+<td  >18.4</td>
+<td  >9.4</td>
+<td  >9.0</td>
+<td  >2.480</td>
+</tr>
+<tr>
+<td>1971</td>
+<td  >206,827</td>
+<td  >3,555,970</td>
+<td  >1,927,542</td>
+<td  >1,628,428</td>
+<td  >17.2</td>
+<td  >9.3</td>
+<td  >7.9</td>
+<td  >2.266</td>
+</tr>
+<tr>
+<td>1972</td>
+<td  >209,284</td>
+<td  >3,258,411</td>
+<td  >1,963,944</td>
+<td  >1,294,467</td>
+<td  >15.6</td>
+<td  >9.4</td>
+<td  >6.2</td>
+<td  >2.010</td>
+</tr>
+<tr>
+<td>1973</td>
+<td  >211,357</td>
+<td  >3,136,965</td>
+<td  >1,973,003</td>
+<td  >1,163,962</td>
+<td  >14.8</td>
+<td  >9.5</td>
+<td  >5.3</td>
+<td  >1.879</td>
+</tr>
+<tr>
+<td>1974</td>
+<td  >213,342</td>
+<td  >3,159,958</td>
+<td  >1,934,388</td>
+<td  >1,225,570</td>
+<td  >14.8</td>
+<td  >9.1</td>
+<td  >5.7</td>
+<td  >1.835</td>
+</tr>
+<tr>
+<td>1975</td>
+<td  >215,465</td>
+<td  >3,144,198</td>
+<td  >1,892,879</td>
+<td  >1,251,319</td>
+<td  >14.6</td>
+<td  >8.8</td>
+<td  >5.8</td>
+<td  >1.774</td>
+</tr>
+<tr>
+<td>1976</td>
+<td  >217,563</td>
+<td  >3,167,788</td>
+<td  >1,909,440</td>
+<td  >1,258,348</td>
+<td  >14.6</td>
+<td  >8.8</td>
+<td  >5.8</td>
+<td  >1.738</td>
+</tr>
+<tr>
+<td>1977</td>
+<td  >219,760</td>
+<td  >3,326,632</td>
+<td  >1,899,597</td>
+<td  >1,427,035</td>
+<td  >15.1</td>
+<td  >8.6</td>
+<td  >6.5</td>
+<td  >1.789</td>
+</tr>
+<tr>
+<td>1978</td>
+<td  >222,095</td>
+<td  >3,333,279</td>
+<td  >1,927,788</td>
+<td  >1,405,491</td>
+<td  >15.0</td>
+<td  >8.7</td>
+<td  >6.3</td>
+<td  >1.760</td>
+</tr>
+<tr>
+<td>1979</td>
+<td  >224,567</td>
+<td  >3,494,398</td>
+<td  >1,913,841</td>
+<td  >1,580,557</td>
+<td  >15.6</td>
+<td  >8.5</td>
+<td  >7.1</td>
+<td  >1.808</td>
+</tr>
+<tr>
+<td>1980</td>
+<td  >227,225</td>
+<td  >3,612,258</td>
+<td  >1,989,841</td>
+<td  >1,622,417</td>
+<td  >15.9</td>
+<td  >8.8</td>
+<td  >7.1</td>
+<td  >1.839</td>
+</tr>
+<tr>
+<td>1981</td>
+<td  >229,466</td>
+<td  >3,629,238</td>
+<td  >1,977,981</td>
+<td  >1,651,257</td>
+<td  >15.8</td>
+<td  >8.6</td>
+<td  >7.2</td>
+<td  >1.812</td>
+</tr>
+<tr>
+<td>1982</td>
+<td  >231,664</td>
+<td  >3,680,537</td>
+<td  >1,974,797</td>
+<td  >1,705,740</td>
+<td  >15.9</td>
+<td  >8.5</td>
+<td  >7.4</td>
+<td  >1.827</td>
+</tr>
+<tr>
+<td>1983</td>
+<td  >233,792</td>
+<td  >3,638,933</td>
+<td  >2,019,201</td>
+<td  >1,619,732</td>
+<td  >15.6</td>
+<td  >8.6</td>
+<td  >6.9</td>
+<td  >1.799</td>
+</tr>
+<tr>
+<td>1984</td>
+<td  >235,825</td>
+<td  >3,669,141</td>
+<td  >2,039,369</td>
+<td  >1,629,772</td>
+<td  >15.6</td>
+<td  >8.6</td>
+<td  >6.9</td>
+<td  >1.806</td>
+</tr>
+<tr>
+<td>1985</td>
+<td  >237,924</td>
+<td  >3,760,561</td>
+<td  >2,086,440</td>
+<td  >1,674,121</td>
+<td  >15.8</td>
+<td  >8.8</td>
+<td  >7.0</td>
+<td  >1.844</td>
+</tr>
+<tr>
+<td>1986</td>
+<td  >240,133</td>
+<td  >3,756,547</td>
+<td  >2,105,361</td>
+<td  >1,651,186</td>
+<td  >15.6</td>
+<td  >8.8</td>
+<td  >6.9</td>
+<td  >1.837</td>
+</tr>
+<tr>
+<td>1987</td>
+<td  >242,289</td>
+<td  >3,809,394</td>
+<td  >2,123,323</td>
+<td  >1,686,071</td>
+<td  >15.7</td>
+<td  >8.8</td>
+<td  >7.0</td>
+<td  >1.872</td>
+</tr>
+<tr>
+<td>1988</td>
+<td  >244,499</td>
+<td  >3,909,510</td>
+<td  >2,167,999</td>
+<td  >1,741,511</td>
+<td  >16.0</td>
+<td  >8.9</td>
+<td  >7.1</td>
+<td  >1.934</td>
+</tr>
+<tr>
+<td>1989</td>
+<td  >246,819</td>
+<td  >4,040,958</td>
+<td  >2,150,466</td>
+<td  >1,890,492</td>
+<td  >16.4</td>
+<td  >8.7</td>
+<td  >7.7</td>
+<td  >2.014</td>
+</tr>
+<tr>
+<td>1990</td>
+<td  >249,623</td>
+<td  >4,158,212</td>
+<td  >2,148,463</td>
+<td  >2,009,749</td>
+<td  >16.7</td>
+<td  >8.6</td>
+<td  >8.1</td>
+<td  >2.081</td>
+</tr>
+<tr>
+<td>1991</td>
+<td  >252,981</td>
+<td  >4,110,907</td>
+<td  >2,169,518</td>
+<td  >1,941,389</td>
+<td  >16.2</td>
+<td  >8.6</td>
+<td  >7.7</td>
+<td  >2.062</td>
+</tr>
+<tr>
+<td>1992</td>
+<td  >256,514</td>
+<td  >4,065,014</td>
+<td  >2,175,613</td>
+<td  >1,889,401</td>
+<td  >15.8</td>
+<td  >8.5</td>
+<td  >7.4</td>
+<td  >2.046</td>
+</tr>
+<tr>
+<td>1993</td>
+<td  >259,919</td>
+<td  >4,000,240</td>
+<td  >2,268,553</td>
+<td  >1,731,687</td>
+<td  >15.4</td>
+<td  >8.7</td>
+<td  >6.7</td>
+<td  >2.019</td>
+</tr>
+<tr>
+<td>1994</td>
+<td  >263,126</td>
+<td  >3,952,767</td>
+<td  >2,278,994</td>
+<td  >1,673,773</td>
+<td  >15.0</td>
+<td  >8.7</td>
+<td  >6.4</td>
+<td  >2.001</td>
+</tr>
+<tr>
+<td>1995</td>
+<td  >266,278</td>
+<td  >3,899,589</td>
+<td  >2,312,132</td>
+<td  >1,587,457</td>
+<td  >14.6</td>
+<td  >8.7</td>
+<td  >6.0</td>
+<td  >1.978</td>
+</tr>
+<tr>
+<td>1996</td>
+<td  >269,394</td>
+<td  >3,891,494</td>
+<td  >2,314,690</td>
+<td  >1,576,804</td>
+<td  >14.4</td>
+<td  >8.6</td>
+<td  >5.9</td>
+<td  >1.976</td>
+</tr>
+<tr>
+<td>1997</td>
+<td  >272,647</td>
+<td  >3,880,894</td>
+<td  >2,314,245</td>
+<td  >1,566,649</td>
+<td  >14.2</td>
+<td  >8.5</td>
+<td  >5.7</td>
+<td  >1.971</td>
+</tr>
+<tr>
+<td>1998</td>
+<td  >275,854</td>
+<td  >3,941,553</td>
+<td  >2,337,256</td>
+<td  >1,604,297</td>
+<td  >14.3</td>
+<td  >8.5</td>
+<td  >5.8</td>
+<td  >1.999</td>
+</tr>
+<tr>
+<td>1999</td>
+<td  >279,040</td>
+<td  >3,959,417</td>
+<td  >2,391,399</td>
+<td  >1,568,018</td>
+<td  >14.2</td>
+<td  >8.6</td>
+<td  >5.6</td>
+<td  >2.007</td>
+</tr>
+<tr>
+<td>2000</td>
+<td  >282,172</td>
+<td  >4,058,814</td>
+<td  >2,403,351</td>
+<td  >1,655,463</td>
+<td  >14.4</td>
+<td  >8.5</td>
+<td  >5.9</td>
+<td  >2.056</td>
+</tr>
+<tr>
+<td>2001</td>
+<td  >285,082</td>
+<td  >4,025,933</td>
+<td  >2,416,425</td>
+<td  >1,609,508</td>
+<td  >14.1</td>
+<td  >8.5</td>
+<td  >5.6</td>
+<td  >2.030</td>
+</tr>
+<tr>
+<td>2002</td>
+<td  >287,804</td>
+<td  >4,021,726</td>
+<td  >2,443,387</td>
+<td  >1,578,339</td>
+<td  >14.0</td>
+<td  >8.5</td>
+<td  >5.5</td>
+<td  >2.020</td>
+</tr>
+<tr>
+<td>2003</td>
+<td  >290,326</td>
+<td  >4,089,950</td>
+<td  >2,448,288</td>
+<td  >1,641,662</td>
+<td  >14.1</td>
+<td  >8.4</td>
+<td  >5.5</td>
+<td  >2.047</td>
+</tr>
+<tr>
+<td>2004</td>
+<td  >293,046</td>
+<td  >4,112,052</td>
+<td  >2,397,615</td>
+<td  >1,714,437</td>
+<td  >14.0</td>
+<td  >8.2</td>
+<td  >5.9</td>
+<td  >2.051</td>
+</tr>
+<tr>
+<td>2005</td>
+<td  >295,753</td>
+<td  >4,138,349</td>
+<td  >2,448,017</td>
+<td  >1,690,332</td>
+<td  >14.0</td>
+<td  >8.3</td>
+<td  >5.7</td>
+<td  >2.057</td>
+</tr>
+<tr>
+<td>2006</td>
+<td  >298,593</td>
+<td  >4,265,555</td>
+<td  >2,426,264</td>
+<td  >1,839,291</td>
+<td  >14.3</td>
+<td  >8.1</td>
+<td  >6.2</td>
+<td  >2.108</td>
+</tr>
+<tr>
+<td>2007</td>
+<td  >301,580</td>
+<td  >4,316,233</td>
+<td  >2,423,712</td>
+<td  >1,892,521</td>
+<td  >14.3</td>
+<td  >8.0</td>
+<td  >6.3</td>
+<td  >2.120</td>
+</tr>
+<tr>
+<td>2008</td>
+<td >304,375</td>
+<td >4,247,694</td>
+<td >2,471,984</td>
+<td >1,775,710</td>
+<td >14.0</td>
+<td >8.1</td>
+<td >5.9</td>
+<td >2.072</td>
+</tr>
+<tr>
+  <td>2009</td>
+  <td >307,007</td>
+  <td >4,130,665</td>
+  <td >2,437,163</td>
+  <td >1,693,502</td>
+  <td >13.5</td>
+  <td >7.9</td>
+  <td >5.6</td>
+  <td >2.002</td>
+</tr>
+<tr>
+<td>2010</td>
+<td >309,330</td>
+<td >3,999,386</td>
+<td >2,468,435</td>
+<td >1,530,951</td>
+<td >13.0</td>
+<td >8.0</td>
+<td >5.0</td>
+<td >1.931</td>
+</tr>
+<tr>
+<td>2011</td>
+<td >311,583</td>
+<td>3,953,593</td>
+<td >2,515,458</td>
+<td >1,438,415</td>
+<td >12.7</td>
+<td >8.1</td>
+<td >4.6</td>
+<td >1.894</td>
+</tr>
+<tr>
+<td>2012</td>
+<td >313,874</td>
+<td >3,952,937</td>
+<td >2,543,279</td>
+<td >1,409,658</td>
+<td >12.6</td>
+<td >8.1</td>
+<td >4.5</td>
+<td>1.880</td>
+</tr>
+<tr>
+<td>2013</td>
+<td >316,129</td>
+<td >3,932,181</td>
+<td >2,596,993</td>
+<td >1,336,183</td>
+<td >12.4</td>
+<td >8.2</td>
+<td >4.2</td>
+<td >1.857</td>
+</tr>
+<tr>
+<td>2014</td>
+<td >319,113</td>
+<td >3,988,076</td>
+<td >2,626,418</td>
+<td >1,361,658</td>
+<td >12.5</td>
+<td >8.2</td>
+<td >4.3</td>
+<td >1.862</td>
+</tr>
+<tr>
+<td>2015</td>
+<td >321,442</td>
+<td >3,977,745</td>
+<td ></td>
+<td ></td>
+<td >12.4</td>
+<td ></td>
+<td></td>
+<td>1.843</td>
+</tr>
+</table>
+<footer>
+  <div id="topFooter">Copyright</div>
+  <div id="mainFooter">
+   <p>Address:</p>
+   <p>Contact:</p>
+   <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+ </div>
+</footer>
+
+<script type="text/javascript">
+  $("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+  $(function(){
+    // Calling Login Form
+    $("#login_form").click(function(){
+      //$(".social_login").hide();
+      $(".loginWin").hide();
+      $(".user_login").show();
+      return false;
+    });
+
+    // Calling Register Form
+    $("#register_form").click(function(){
+      $(".loginWin").hide();
+      $(".user_register").show();
+      $(".header_title").text('Register');
+      return false;
+    });
+
+    // Going back to Social Forms
+    $(".back_btn").click(function(){
+      $(".user_login").hide();
+      $(".user_register").hide();
+      $(".loginWin").show();
+      $(".header_title").text('Login');
+      return false;
+    });
+
+  })
+</script>
+  </body>
+</html>
