@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* reset CSS */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{
+  font-size:12px;
+
+}
+img{
+  border:none;
+}
+ul,ol{
+  list-style:none;
+}
+input,select,textarea{
+  outline:none;
+  border:1px solid #A9A9A9;
+  background:#FFF;
+}
+textarea{
+  resize:none;
+}
+a{
+  text-decoration:none;
+}
+
+/* clear float*/
+/*clear float*/
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.clearfix{
+  zoom:1;
+}
+
+/* header style*/
+header #webTitle{
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  width: 100%;
+}
+
+#sectionTop1{
+  margin-top: 10px;
+  display: -moz-box;
+  display: -webkit-box;
+  width: 900px;
+}
+#logoL{
+  width: 300px;
+}
+#flag{
+  width: 100px;
+  height: 74px;
+  padding: 0 20px;
+}
+#topMid{
+  width:400px;
+  padding: 20px;
+}
+#topR{
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+span{
+  padding: 0 5px;
+}
+/* navigation bar */
+header nav{
+  width: 900px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+ul #navTop{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    background-color: #333;
+}
+
+ul#navTop li {
+    float: left;
+}
+
+ul#navTop li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#navTop li a.active{
+  background-color: #80bfff;
+  color: #000000;
+}
+ul#navTop li a:hover:not(.active){
+  background-color:  #ccccb3;
+  color: white;
+}
+/* sign in/ sign up button*/
+.action_btns{
+    text-align: center;
+  }
+  /*default setting*/
+  .btn{
+    background-color: #0074cc;
+    *background-color: #0055cc;
+    /*CSS gradient shadow */
+  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
+    background-image: -o-linear-gradient(top, #0088cc, #0055cc);
+    background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
+    background-image: linear-gradient(top, #0088cc, #0055cc);
+    background-repeat: repeat-x;
+    display: inline-block;
+    *display: inline;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: #ccc;
+    /* CSS3 color module*/
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    color:#ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    filter: progid:dximagetransform.microsoft.gradient(
+      startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0)
+;
+filter: progid:dixmagetransform.microsoft.gradient(enabled=false);
+line-height: normal;
+padding: 14px 24px;
+text-align: center;
+/* CSS3 text shadow*/
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+text-decoration: none;
+vertical-align: middle;
+*zoom: 1;
+  }
+  /* suspending */
+  .btn:hover{
+    background-position: 0 -15px;
+    background-color: #0055cc;
+    *background-color: #004ab3;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    /* CSS3 animation*/
+    -webkit-transition: background-position 0.1s linear;
+    -moze-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+  }
+  /*click on button*/
+  .btn:active{
+    background-color: #0055cc;
+    *background-color: #004ab3;
+    background-color: #004099 \9;
+    background-image: none;
+    outline: 0;
+    /*CSS3 box shadow */
+   box-shadow: inset 0 2px 4px blue;
+    color: rgba(255, 255, 255, 0.75);
+
+  }
+  /* button focus effect*/
+  .btn:focus{
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+
+/* introduction part style*/
+.intro{
+  padding-top: 65px;
+  min-height: 100%;
+}
+.intro h1 h3{
+  text-align: center;
+  padding: 10px;
+}
+.intro p{
+  margin: 5px 10px 5px 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+/* image part*/
+
+.imgstyle{
+  margin-right: 21px;
+  padding: 10px 12px;
+  position: relative;
+  display: inline-block;
+}
+.imgstyle img{
+  width: 250px;
+  height: 125px;
+  padding: 10px;
+}
+
+
+/* history.html table style*/
+.tbstyle{
+  width: 100%;
+  height: 110px;
+  background-color: #CCC;
+  margin: 90px 20px 20px 30px;
+
+}
+table {
+  width: 80%;
+  margin: 20px 20px 10px 20px;
+
+}
+caption {
+   caption-side: top;
+}
+.tbCaption{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+table, th, td{
+  border: 1px solid blue;
+}
+th{
+  background: #A71ED8;
+  color: white;
+  font-size: 16px;
+}
+/* registration style*/
+input label{
+  float: left;
+  margin: 5px;
+  display: inline;
+}
+
+/*.txtStyle{
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+}*/
+.fmStyle{
+  width: 300px;
+  height: 20px;
+  margin: 45px 15px;
+  padding: 15px;
+  font-size: 20px;
+}
+.boxStyle{
+  display: block;
+  width:30%;
+  padding: 10px;
+  border:1px solid #DDD;
+  color:#666;}
+}
+
+/*footer style*/
+footer{
+  position: relative;
+  top:250px;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  background-color: #efefef;
+}
+
+/*footer #topFooter{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer #mainFooter{
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+}*/
+
+/* common style */
+header section footer nav {
+  display: block;
+}
+body{
+  font-weight: normal;
+  font-size: 12px;
+  color: #666666;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
