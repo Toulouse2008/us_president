@@ -1,0 +1,173 @@
+<DOCTYPE html>
+<html lang=“en-US”>
+<head>
+<meta charset=“UTF-8”>
+<title>The history of the United States</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="stylelogin.css" /></head>
+
+<body>
+  <header id="webTitle">
+    <section id="sectionTop1">
+      <div id="logoL">
+      <img id="flag" src="images/flag.png" />
+    </div>
+    <div id="topMid">
+      <h2>The United State Presidents</h2>
+    </div>
+    <div id="topR">
+        <a id="modal_trigger" href="#modal" class="btn">Sign in | Sign up</a>
+
+        <div id="modal" class="popupContainer" style="display:none;">
+          <header class="popupHeader">
+            <span class="header_title">Login</span>
+            <span class="modal_close"><i class="fa fa-times"></i></span>
+          </header>
+
+          <section class="popupBody">
+            <div class = "loginWin">
+
+              <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+              </div>
+          </div>
+
+
+            <!-- Username & Password Login form -->
+            <div class="user_login">
+              <form action=login.php method=post>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                  <input id="remember" type="checkbox" />
+                  <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                  <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                  <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+              </form>
+
+              <a href="#" class="forgot_password">Forgot password?</a>
+            </div>
+
+            <!-- Register Form -->
+            <div class="user_register">
+              <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                  <input id="send_updates" type="checkbox" />
+                  <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                  <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                  <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+
+    </div>
+    </section>
+
+  <nav>
+    <ul id="navTop">
+      <li><a href=home.html>Home</a></li>
+      <li><a class="active" href=history.html>History</a></li>
+      <li><a href=president.html>President </a></li>
+      <li><a href=population.html>Population</a></li>
+      <li><a href=state.html>State</a></li>
+      <li><a href=registration.html>Registration</a></li>
+      <li><a href=contact.html>Contact Us</a><li>
+    </ul>
+  </nav>
+<div class="tbstyle">
+<table>
+  <caption>Timeline for History of United States</caption>
+  <tr>
+    <th href=prehistory.html>Prehistory</th>
+    <th href=pre-colonial.html>Pre-Colonial</th>
+    <th href=“colonial.html”>Colonial period</th>
+    <th href=“1776.html”>1776-1789</th>
+  </tr>
+  <tr>
+    <td href=“1789.html”>1789-1849</td>
+    <td href=“1849.html”>1849-1865</td>
+    <td href=“1865.html”>1865-1918</td>
+    <td href=“1918.html”>1918-1945</td>
+  </tr>
+    <td href=“1945.html”>1945-1964</td>
+    <td href=“1964.html”>1964-1980</td>
+    <td href=“1980.html”>1980-1991</td>
+    <td href=“1991.html”>1991-present</td>
+  </tr>
+</table>
+</div>
+
+<footer>
+  <div id="topFooter">Copyright</div>
+  <div id="mainFooter">
+   <p>Address:</p>
+   <p>Contact:</p>
+   <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+ </div>
+</footer>
+
+<script type="text/javascript">
+  $("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+
+  $(function(){
+    // Calling Login Form
+    $("#login_form").click(function(){
+      //$(".social_login").hide();
+      $(".loginWin").hide();
+      $(".user_login").show();
+      return false;
+    });
+
+    // Calling Register Form
+    $("#register_form").click(function(){
+      $(".loginWin").hide();
+      $(".user_register").show();
+      $(".header_title").text('Register');
+      return false;
+    });
+
+    // Going back to Social Forms
+    $(".back_btn").click(function(){
+      $(".user_login").hide();
+      $(".user_register").hide();
+      $(".loginWin").show();
+      $(".header_title").text('Login');
+      return false;
+    });
+
+  })
+</script>
+</body>
+
+</html>
