@@ -1,0 +1,90 @@
+<DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="webTitle">
+    <section id="sectionTop1">
+      <div id="logoL">
+      <img id="flag" src="images/flag.png" />
+    </div>
+    <div id="topMid">
+      <h2>The United State Presidents</h2>
+    </div>
+    <div id="topR">
+      <ul>
+        <li><a href="#">Sign in<span>|</span>Sign up</a></li>
+      </ul>
+    </div>
+    </section>
+
+  <nav>
+    <ul id="navTop">
+      <li><a href=home.html>Home</a></li>
+      <li><a href=history.html>History</a></li>
+      <li><a href=president.html>President </a></li>
+      <li><a href=population.html>Population</a></li>
+      <li><a href=state.html>State</a></li>
+      <li><a class="active" href=registration.html>Registration</a></li>
+      <li><a href=contact.html>Contact Us</a><li>
+    </ul>
+  </nav>
+
+  <div >
+    <form class="fmStyle" action=registration.php method=post>
+
+      <label>User Name:</label>
+        <input type=text name=usrname />
+        <span class="error">*<?php echo $usrnameErr; ?></span><br>
+      <label>Password:</label>
+        <input type=password name=psword>
+        <span class="error">*<?php echo $pswordErr; ?></span><br>
+      <label>First Name:</label>
+        <input  type=text name=fname>
+        <span class="error">*<?php echo $fnameErr; ?></span><br>
+      <label>Middle Name:</label>
+        <input   type=text name=mname><br>
+      <label>Last Name:</label>
+        <input   type=text name=lname>
+        <span class="error">*<?php echo $lnameErr; ?></span><br>
+      <label>Male</label>
+        <input   type=radio name=gender>
+      <label>Female</label>
+        <input   type=radio name=gender><br>
+      <label>Email:</label>
+        <input   type=email name=email>
+        <span class="error">*<?php echo $emailErr; ?></span><br>
+      <label>Tel:</label>
+        <input   type=number name=tel><br>
+
+      <label>Company name:</label>
+        <input   type=text name=cname><br>
+      <label>Your address:</label>
+        <input   type=text name=address><br>
+      <label>Town/City:</label>
+        <input   type=text name=town><br>
+      <label>State:</label>
+        <input   type=text name=state><br>
+      <label>Zip:</label>
+        <input   type=number name=zip><br>
+
+      <label>Country:</label>
+        <input   type=text name=country><br>
+
+        <input class="sbButton" type="button" value=Submit>
+
+</form>
+ </div>
+<footer>
+  <div id="topFooter">Copyright</div>
+  <div id="mainFooter">
+   <p>Address:</p>
+   <p>Contact:</p>
+   <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+ </div>
+</footer>
+
+</body>
+</html>
